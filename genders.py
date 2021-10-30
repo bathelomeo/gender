@@ -6,8 +6,15 @@
 
 import pyttsx3
 friend = pyttsx3.init()
-Hello= input('Hello ')
+friend.say('Hello')
+friend.runAndWait()
 Checking = input('How are you')
+
+if Checking == 'Good':
+   print('Great')
+if Checking == 'Bad':
+    print('I am very Sorry')
+
 Check = input('How have you been')
 
 if Check == 'Good':
@@ -15,13 +22,10 @@ if Check == 'Good':
 if Check == 'Bad':
     print('I am very Sorry')
 
-Name = input ('What is your name')
 Gender = input('What Gender are you')
 
-if Check == 'Good':
-   print('Great')
-if Check == 'Bad':
-    print('I am very Sorry')
+Name = input ('What is your name')
+
 
 if Gender == 'Male':
     friend.say("Welcome Mr." + str(Name))
